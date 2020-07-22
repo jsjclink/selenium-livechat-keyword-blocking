@@ -19,9 +19,11 @@
     ```
     iframes = driver.find_elements_by_css_selector('iframe')
     for iframe in iframes:
-      print(iframe.get_attribute('name'))
+      print(iframe.get_attribute('id'))
     ```
-
+    으로 하니까 id 하나 출력됨 'chatframe' 개발자 도구로 확인한 것과 같음.
+  -driver.switch_to.frame("chatframe") 해봄.
+  -일단 오류는 안뜸. print(driver.page_source)로 해보니 vscode에서는 줄이 너무 길어서 다 안나오고 python idle로 하니 전체 html 나옴. 성공.
 6. live 챗만 따로 모으는 방법도 있음(pytchat라이브러리) 쓸모는 없음.
 
 7.
