@@ -12,6 +12,7 @@
 4. selenium에서 iframe 내의 element를 추출하는 방법이 따로 있다는 것을 알게 됨.
 
 5. https://dejavuqa.tistory.com/198 그 방법에 관한 내용임.
+  -
 
 6. live 챗만 따로 모으는 방법도 있음(pytchat라이브러리) 쓸모는 없음.
 
