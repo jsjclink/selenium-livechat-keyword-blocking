@@ -20,7 +20,6 @@
     iframes = driver.find_elements_by_css_selector('iframe')
     for iframe in iframes:
       print(iframe.get_attribute('id'))
-    ``` 
     
   -으로 하니까 id 하나 출력됨 'chatframe' 개발자 도구로 확인한 것과 같음.
   -driver.switch_to.frame("chatframe") 해봄.
