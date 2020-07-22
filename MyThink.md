@@ -28,3 +28,10 @@
   
   -driver.find_elements_by_css_selector("#message") 로 실시간 댓글 목록 읽어오기 성공함.
   
+6. 차단하기 버튼을 누르기 위해서는 마우스를 올려야만 생기는 숨겨진 버튼을 눌러야함. 그 버튼을 찾을 수 없음.
+  - move_to_element?
+  - 그럴 필요 없이 그냥 똑같이 댓글 xpath로 선택해서 클릭하면 메뉴가 뜸
+  - 메뉴 뜬거 선택해서 click
+  - 차단 click
+  
+  
