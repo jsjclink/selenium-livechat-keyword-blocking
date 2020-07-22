@@ -26,7 +26,7 @@
   - driver.switch_to.frame("chatframe") 해봄.
   - 일단 오류는 안뜸. print(driver.page_source)로 해보니 vscode에서는 줄이 너무 길어서 다 안나오고 python idle로 하니 전체 html 나옴. 성공.
   
-  -driver.find_elements_by_css_selector("#message") 로 실시간 댓글 목록 읽어오기 성공함.
+  - driver.find_elements_by_css_selector("#message") 로 실시간 댓글 목록 읽어오기 성공함.
   
 6. 차단하기 버튼을 누르기 위해서는 마우스를 올려야만 생기는 숨겨진 버튼을 눌러야함. 그 버튼을 찾을 수 없음.
   - move_to_element?
