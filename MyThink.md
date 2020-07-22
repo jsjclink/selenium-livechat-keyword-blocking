@@ -11,8 +11,16 @@
 
 4. selenium에서 iframe 내의 element를 추출하는 방법이 따로 있다는 것을 알게 됨.
 
-5. https://dejavuqa.tistory.com/198 그 방법에 관한 내용임.
-  -
+5. https://dejavuqa.tistory.com/198 , https://m.blog.naver.com/PostView.nhn?blogId=kiddwannabe&logNo=221253004219&proxyReferer=https:%2F%2Fwww.google.com%2F 그 방법에 관한 내용임.
+  - iframe은 html 안에 또 다른 html이 오는 경우이기 때문에 swich_to_frame()함수를 사용해 iframe 안에 있는 element를 확인 할 수 있게 해줘야 함.
+  - iframe태그에 name 속성이 있다면 driver.switch_to_frame("iframe name 값")dmfh 해당 iframe으로 focus를 맞춰 줄 수 있음. (2번째 글에선 switch_to.frame()이라고 함)
+  - id 선택자 있길래 id 선택자로도 선택 가능한지 검색해봄
+  - 
+    ```
+    iframes = driver.find_elements_by_css_selector('iframe')
+    for iframe in iframes:
+      print(iframe.get_attribute('name'))
+    ```
 
 6. live 챗만 따로 모으는 방법도 있음(pytchat라이브러리) 쓸모는 없음.
 
